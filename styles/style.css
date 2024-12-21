@@ -135,7 +135,7 @@
 }
 
 .card__image8 {
-  filter: brightness(200%) contrast(150%) sepia(20%) grayscale(15%);
+  filter: sepia(80%) grayscale(55%) contrast(50%);
 }
 
 
