@@ -105,8 +105,39 @@
   border: 2px solid #000;
 }
 
-.card__image:nth-of-type(2) {
+
+.card__image1 {
+  filter: brightness(350%);
 }
+
+.card__image2 {
+  filter: contrast(700%);
+}
+
+.card__image3 {
+  filter: grayscale(1);
+}
+
+.card__image4 {
+  filter: blur(1rem);
+}
+
+.card__image5 {
+  filter: saturate(500%);
+}
+
+.card__image6 {
+  filter: sepia(90%);
+}
+
+.card__image7 {
+  filter: invert(1)
+}
+
+.card__image8 {
+  filter: brightness(200%) contrast(150%) sepia(20%) grayscale(15%);
+}
+
 
 .card__text-container {
   padding: 25px 25.3px 25px 25px;
