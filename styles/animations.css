@@ -23,30 +23,15 @@
   
   .like-icon .contour {
     fill: var(--like-contour-color, #000000);
-    transition: fill 0.1s linear;
+    transition: fill 0.1s linear;    
   }
-
-  .like-icon.is-liked .core {
-    fill: var(--like-sparks-color, #ff0000);
-    transition: fill 0.3s linear;
-  }
-  
-  .like-icon.is-liked .main-body {
-    fill: var(--like-sparks-color, #ff0000);
-    transition: fill 0.3s linear 0.05s;
+   
+  .like-icon .heart {
+    transform-origin: center;
   }
   
-  .like-icon.is-liked .contour {
-    fill: var(--like-sparks-color, #ff0000);
-    transition: fill 0.3s linear 0.06s;
-  }
-  
-  .like-icon.is-liked .heart {
-    animation: heart 0.3s ease-in 0.1s 1 alternate;
-  }
-  
-  .like-icon.is-liked .sparks {
-    animation: sparks 0.3s ease-in 0.3s 1 alternate;
+  .like-icon .sparks {
+    opacity: 0;
   }
   
   .like-icon:hover .core {
@@ -69,14 +54,29 @@
     transition: fill 0.3s linear 0.05s;
   }
   
-  .like-icon .heart {
-    transform-origin: center;
+  .like-icon.is-liked .core {
+    fill: var(--like-sparks-color, #ff0000);
+    transition: fill 0.3s linear;
   }
   
-  .like-icon .sparks {
-    opacity: 0;
+  .like-icon.is-liked .main-body {
+    fill: var(--like-sparks-color, #ff0000);
+    transition: fill 0.3s linear 0.05s;
   }
   
+  .like-icon.is-liked .contour {
+    fill: var(--like-sparks-color, #ff0000);
+    transition: fill 0.3s linear 0.06s;
+  }
+  
+  .like-icon.is-liked .heart {
+    animation: heart 0.3s ease-in 0.1s 1 alternate;
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation: sparks 0.3s ease-in 0.3s 1 alternate;
+  }
+
   @keyframes heart {
     0% {
       transform: scale(1);
