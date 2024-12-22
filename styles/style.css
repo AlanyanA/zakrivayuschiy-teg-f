@@ -22,7 +22,7 @@
   min-block-size: 100dvb;
   padding-block: 100px;
   background-image: var(--background-image);
-  background-attachment: fixed; 
+  background-attachment: fixed;
   font-family: var(--font-family);
   font-variation-settings: "wght" 400;
 }
@@ -259,7 +259,7 @@
 }
 
 .dialog__save[open] .dialog__save-container {
-  padding-block-end: 30px;  
+  padding-block-end: 30px;
   display: flex;
   gap: 20px;
   align-items: center;
